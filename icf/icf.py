@@ -32,6 +32,7 @@ class ICF(object):
         [(user_items[u].append(a), item_users[a].append(u))
          for u, a in training_set]
 
+        print('Here!')
         if test_set is not None:
             test_user_items = defaultdict(list)
             [test_user_items[u].append(a) for u, a in test_set]
